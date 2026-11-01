@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anubhav Chat</title>
+
+    <!-- CSS Connected -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <span class="brand-icon">✦</span>
+            <span>Anubhav Chat</span>
+            <span class="beta">BETA</span>
+        </div>
+
+        <button class="new-chat" id="new-chat">
+            <span>＋</span> New Chat
+        </button>
+
+        <p class="history-title">YOUR CONVERSATIONS</p>
+        <div id="chat-history" class="chat-history">
+            <p class="history-empty">No conversations yet</p>
+        </div>
+
+        <div class="account">
+            <div class="account-avatar">A</div>
+            <div>
+                <strong>My Account</strong>
+                <span>Personal AI</span>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-chat">
+
+        <header class="topbar">
+            <button id="menu-toggle" class="menu-toggle">☰</button>
+            <div class="mobile-brand">✦ Anubhav Chat</div>
+        </header>
+
+        <section id="chat-messages" class="chat-messages">
+
+            <div id="welcome" class="welcome">
+                <div class="welcome-icon">✦</div>
+
+                <h1>What can I help you with?</h1>
+
+                <p>Ask questions, explore ideas, or learn something new.</p>
+
+                <div class="suggestions">
+                    <button data-prompt="Teach me HTML coding">
+                        <span>▣</span> Learn coding
+                    </button>
+
+                    <button data-prompt="Give me some creative ideas">
+                        <span>✦</span> Generate ideas
+                    </button>
+
+                    <button data-prompt="Teach me something interesting">
+                        <span>▧</span> Learn something
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="composer-area">
+            <form id="chat-form" class="chat-form">
+                <textarea
+                    id="user-input"
+                    placeholder="Message Anubhav Chat..."
+                    rows="1"
+                    required
+                ></textarea>
+
+                <button type="submit" class="send-button" aria-label="Send message">
+                    ↑
+                </button>
+            </form>
+
+            <p class="disclaimer">
+                Anubhav Chat can make mistakes. Check important information.
+            </p>
+        </div>
+
+    </main>
+</div>
+
+<!-- JavaScript Connected -->
+<script src="script.js"></script>
+
+</body>
+</html>
